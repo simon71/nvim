@@ -1,0 +1,45 @@
+{
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    },
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "puppet": {
+      "command": "ruby",
+      "args": ["/path/to/puppet-editor-services/puppet-languageserver","--stdio","--puppet-settings=--moduledir,/path/to/module/path"],
+      "cwd": "/path/to/puppet-editor-services",
+      "filetypes": ["puppet"],
+      "rootPatterns": [".git/", "metadata.json"]
+    },
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  },
+
+  "yaml.schemaStore.enable": true,
+  "yaml.schemas": {
+    "kubernetes": "/*.yaml"
+  },
+
+  "http.proxyCA": "/Users/simon.harvey/Zscaler/ZscalerRootCertificate-2048-SHA256.crt",
+
+  // explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  }
+}
+
