@@ -19,7 +19,7 @@
     },
     "groovy": {
       "command": "java",
-      "args" : ["-jar", "/Users/simon.harvey/.config/nvim-nightly/plugged/groovy-language-server/build/libs/groovy-language-server-all.jar "],
+      "args" : ["-jar", "/Users/simon.harvey/.config/nvim-nightly/plugged/groovy-language-server/build/libs/groovy-language-server-all.jar"],
       "filetypes": ["groovy"]
     }
   },
