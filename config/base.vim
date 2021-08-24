@@ -1,6 +1,7 @@
 " Colours and Theme {{{
 " set background=dark
-colorscheme gruvbox
+" colorscheme gruvbox
+" colorscheme atom-dark-256
 set background=dark
 ""}}}
 
@@ -35,17 +36,14 @@ set wildmenu                  " Display all matching files when we use tab compl
 set incsearch
 set complete+=k
 set spell
+" Enable 256 color
+set t_Co=256
+set t_ut=
 " }}}
 
-" {{{
-" Create the `tags` file (may need to install ctags first)
-" command! MakeTags !ctags -R .
-
-" - NOW WE CAN:
-" - Use ^] to jump to tag under cursor
-" - Use g^] for ambiguous tags
-" - Use ^t to jump back up the tag stack
-" }}}
+" mouse
+set mouse=a
+let g:is_mouse_enabled = 1
 
 " Default to magic when using substitutions {{{
 cnoremap %s/ %s/\v
@@ -60,15 +58,27 @@ noremap <Right> <Nop>
 " }}}
 
 " Global tab width. {{{
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 "}}}
 
-" Set to show tabs & trailing whitespace {{{
+" Set global fold method {{{
+set foldmethod=syntax 
+" }}}
+
+ " Set to show tabs & trailing whitespace {{{
 set list listchars=tab:.\ ,trail:.
 "}}}
+
+" Random Colours plugin {{{
+let g:random_scheme = 1
+let g:airline_integration = 1
+let g:colorscheme_airline_correlation = 1
+let g:available_colorschemes = ['atom-dark-256', 'atom-dark', 'molokai', 'biogoo', 'cobalt2', 'deus', 'distinguished', 'gruvbox', 'hybrid', 'minimalist', 'monochrome', 'ubaryd', 'understated', 'wombat', 'zenburn']
+let g:available_airline_themes = ['atom-dark-256', 'atom-dark', 'molokai', 'biogoo', 'cobalt2', 'deus', 'distinguished', 'gruvbox', 'hybrid', 'minimalist', 'monochrome', 'ubaryd', 'understated', 'wombat', 'zenburn']
+" }}}
 
 " Vim rooter {{{
 let g:rooter_change_directory_for_non_project_files = 'current'

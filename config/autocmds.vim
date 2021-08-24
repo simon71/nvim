@@ -8,8 +8,16 @@ command! Reload execute "source /Users/simon.harvey/.config/nvim/init.vim"
 
 " Python
 autocmd FileType python let g:python_host_prog = '/usr/bin/python2'
+au FileType python let b:AutoPairs = AutoPairsDefine({"f'" : "'", "r'" : "'", "b'" : "'"})
+
+
+" Program specific indenting
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 
 autocmd! User vim-which-key call which_key#register('<Space>', 'g:which_key_map')
 
 " Jeninsfile as groovy
-au BufNewFile,BufRead Jenkinsfile setf groovy
+autocmd BufNewFile,BufRead Jenkinsfile set ft=groovy
+autocmd BufNewFile,BufRead Jenkinsfile* setf groovy

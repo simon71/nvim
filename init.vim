@@ -15,10 +15,9 @@ call plug#begin()
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 " Plug 'wikitopian/hardmode'
 
-" 	Language Tools
+" General Language Tools
 Plug 'tpope/vim-endwise'
 Plug 'rodjek/vim-puppet'
-Plug 'vim-ruby/vim-ruby'
 Plug 'mrk21/yaml-vim'
 Plug 'reedes/vim-lexical' " Building on Vimâ€™s spell-check and thesaurus/dictionary completion
 Plug 'dpelle/vim-LanguageTool' " download latest snaphots from https://internal1.languagetool.org/snapshots/
@@ -27,9 +26,18 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'nvim-lua/lsp-status.nvim'
 
+" Ruby Specific Plugins
+Plug 'vim-ruby/vim-ruby'
+
+" groovy Specific Plugins
+Plug 'vim-scripts/groovyindent-unix'
+
  " Terraform
 Plug 'juliosueiras/vim-terraform-completion'
 Plug 'hashivim/vim-terraform'
+
+" Python Specific Plugins
+Plug 'vim-scripts/indentpython.vim'
 
 " Go Specific Plugins
 Plug 'fatih/vim-go',          { 'do': ':GoUpdateBinaries' }
@@ -46,8 +54,11 @@ Plug 'honza/vim-snippets'
 
 " IDE Theme/Colorschemes
 " Plug 'arcticicestudio/nord-vim',     { 'as': 'nord' }
+Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhinz/vim-startify'
+Plug 'flazz/vim-colorschemes'
+Plug 'Sammyalhashe/random_colorscheme.vim'
 
 "	Search & Navigation Plugins
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -64,6 +75,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'liuchengxu/vim-which-key'
 Plug 'dylanaraps/fff.vim'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -81,3 +93,4 @@ source ~/.config/nvim-nightly/config/blamer.vim
 source ~/.config/nvim-nightly/config/coc.vim
 source ~/.config/nvim-nightly/config/floaterm.vim
 source ~/.config/nvim-nightly/config/easy-align.vim
+source ~/.config/nvim-nightly/config/python.vim

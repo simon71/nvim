@@ -8,6 +8,8 @@ let mapleader="\<SPACE>"
 "nmap <s-right> <c-w>l
 ""}}}
 
+nmap <leader>n [s
+nmap <leader>o zg
 
 "" vim-easy-align{{{
 "" Start interactive EasyAlign in visual mode (e.g. vipga)
