@@ -1,3 +1,3 @@
 require("gitsigns").setup()
-require("comment").setup()
+require("Comment").setup()
 
