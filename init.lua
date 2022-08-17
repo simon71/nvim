@@ -14,6 +14,7 @@ require("config.ide_general")
 require("config.lualine")
 require("config.align")
 require("config.killersheep")
+require("config.telescope")
 
 --[[
 TODO:

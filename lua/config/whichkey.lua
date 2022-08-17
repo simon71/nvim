@@ -11,7 +11,6 @@ wk.setup {
     },
 }
 
-
 wk.register({
   ["<leader>"] = {
     n = {
@@ -25,6 +24,7 @@ wk.register({
       s = { "<cmd>ToggleTerm size=15 dir=$PWD direction=horizontal <cr>", "small" },
       m = { "<cmd>ToggleTerm size=20 dir=$PWD direction=horizontal <cr>", "medium" },
       f = { "<cmd>ToggleTerm <cr>", "floating" },
+      g = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", "live_grep"}
     },
   },
 })

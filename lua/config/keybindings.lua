@@ -21,3 +21,4 @@ map('t', '<c-k>', '<c-\\><c-N><c-w>k', {noremap = true, silent = true})
 
 -- Clear nohlsearch
 map('n', '<leader><leader>', ':nohlsearch<CR>', {noremap = true, silent = true})
+
