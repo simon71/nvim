@@ -18,3 +18,6 @@ map('t', '<c-h>', '<c-\\><c-N><c-w>h', {noremap = true, silent = true})
 map('t', '<c-j>', '<c-\\><c-N><c-w>j', {noremap = true, silent = true})
 map('t', '<c-l>', '<c-\\><c-N><c-w>l', {noremap = true, silent = true})
 map('t', '<c-k>', '<c-\\><c-N><c-w>k', {noremap = true, silent = true})
+
+-- Clear nohlsearch
+map('n', '<leader><leader>', ':nohlsearch<CR>', {noremap = true, silent = true})

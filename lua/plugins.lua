@@ -26,7 +26,7 @@ return require('packer').startup(function()
 	  tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  	
+
 	-- Whichkey
   	use 'max397574/which-key.nvim'
 
@@ -40,5 +40,8 @@ return require('packer').startup(function()
 	use 'numToStr/Comment.nvim'
 	use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+	
+	-- fun 
+	use 'seandewar/killersheep.nvim'
 
 end)
