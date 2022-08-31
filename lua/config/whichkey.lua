@@ -26,5 +26,10 @@ wk.register({
       f = { "<cmd>ToggleTerm <cr>", "floating" },
       g = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", "live_grep"}
     },
+    T = {
+	name = "+Tabs",
+	n = { "<cmd>BufferLineCycleNext <cr>", "next"},
+	p = { "<cms>BufferLineCyclePrev <cr>", "previous"}
+    }
   },
 })

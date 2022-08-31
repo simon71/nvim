@@ -23,6 +23,7 @@ return require('packer').startup(function()
 	use {'nvim-telescope/telescope.nvim', tag = '0.1.0',}
 	use {'nvim-lua/plenary.nvim'}
 	use { "nvim-telescope/telescope-live-grep-args.nvim" }
+
 	-- Whichkey
   	use 'max397574/which-key.nvim'
 
@@ -36,7 +37,8 @@ return require('packer').startup(function()
 	use 'numToStr/Comment.nvim'
 	use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
-	
+	use 'voldikss/vim-floaterm'
+
 	-- fun 
 	use 'seandewar/killersheep.nvim'
 
