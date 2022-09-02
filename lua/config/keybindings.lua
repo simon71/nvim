@@ -1,7 +1,7 @@
  local map = vim.api.nvim_set_keymap
 
 -- NvimTree
-map('n', '<leader>e', '<cmd>NvimTreeFindFile<cr>', {noremap = true, silent = false})
+map('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', {noremap = true, silent = false})
 
 -- Press ENTER to insert a blank line
 map('n', '<Enter>', 'o<esc>', {noremap = true, silent = true})
