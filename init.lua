@@ -15,6 +15,7 @@ require("config.lualine")
 require("config.align")
 require("config.killersheep")
 require("config.telescope")
+require("config.cheatsheet")
 
 --[[
 TODO:

@@ -14,7 +14,8 @@ local servers = {
 	'jsonls',
 	'solargraph',
 	'terraformls',
-	'yamlls'
+	'yamlls',
+	'bashls'
 }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -62,13 +63,13 @@ cmp.setup {
     end, { 'i', 's' }),
   }),
   sources = {
-	  { name = "nvim_lsp" },
-      { name = "path" },
-      { name = "luasnip" },
-      { name = "nvim_lua" },
-      { name = "buffer" },
-      { name = "calc" },
-      { name = "treesitter" },
+	{ name = "nvim_lsp" },
+	{ name = "path" },
+	{ name = "luasnip" },
+	{ name = "nvim_lua" },
+	{ name = "buffer" },
+	{ name = "calc" },
+	{ name = "treesitter" },
   },
 }
 

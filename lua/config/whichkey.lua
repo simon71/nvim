@@ -15,8 +15,8 @@ wk.register({
   ["<leader>"] = {
     n = {
       name = "+navigation",
-      w = { "<cmd>NvimTreeResize +10<cr>", "Increase Size" },
-      n = { "<cmd>NvimTreeResize -10<cr>", "Decrease Size" },
+      i = { "<cmd>NvimTreeResize +10<cr>", "Increase Size" },
+      d = { "<cmd>NvimTreeResize -10<cr>", "Decrease Size" },
 	  f = { "<cmd>NvimTreeFocus<cr>", "Full Screen Explore"},
     },
     t = {

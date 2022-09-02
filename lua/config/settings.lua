@@ -16,11 +16,11 @@ local settings = {
 	spelllang    = "en_gb",
 
 	--ide
-	showmatchp   = true,              --show matching parenthesis
+	showmatch    = true,              --show matching parenthesis
 	visualbell   = true,
 	number       = true,
 	showmode     = false,
-	scrolloff    = 10,
+	scrolloff    = 999,
 	clipboard    = "unnamed",
 	wildmenu     = true,              --Display all matching files when we use tab complete
 	spell        = false,
@@ -38,9 +38,9 @@ local settings = {
 	laststatus   = 2,
 }
 
---for k, v in pairs(settings) do
---	vim.opt[k] = v
---end
+for k, v in pairs(settings) do
+	vim.opt[k] = v
+end
 
 -- opt.path:append({ "**" })
 vim.cmd([[set path=$PWD/**]])
