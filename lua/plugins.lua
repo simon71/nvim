@@ -29,7 +29,7 @@ return require('packer').startup(function()
 
   	--Editing
 	use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'} 
-	use {'akinsho/toggleterm.nvim', tag = 'v1.*'}
+	use {'akinsho/toggleterm.nvim', branch = 'main'}
 	use 'Vonr/align.nvim'
 
 	--General
