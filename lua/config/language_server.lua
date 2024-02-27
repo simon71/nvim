@@ -1,4 +1,7 @@
---require'lspconfig'.pyright.setup{}
+-- require'lspconfig'.pyright.setup{}
+
+-- nvim-lsp-installer
+require("nvim-lsp-installer").setup {}
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -73,5 +76,3 @@ cmp.setup {
   },
 }
 
--- nvim-lsp-installer
-require("nvim-lsp-installer").setup {}

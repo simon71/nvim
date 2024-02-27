@@ -1,3 +1,3 @@
 require("gitsigns").setup()
-require("Comment").setup()
+require("nvim_comment").setup()
 

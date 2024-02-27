@@ -16,6 +16,7 @@ require("config.align")
 require("config.killersheep")
 require("config.telescope")
 require("config.cheatsheet")
+require("config.homeassistant")
 
 --[[
 TODO:

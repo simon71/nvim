@@ -50,7 +50,7 @@ vim.cmd([[set number]])
 vim.cmd([[set relativenumber]])
 
 -- show whitespace
-vim.cmd([[set listchars=eol:~,tab:<->,trail:$,extends:>,precedes:<]])
+vim.cmd([[set listchars=eol:~,tab:<->,trail:*,extends:>,precedes:<]])
 vim.cmd([[set list]])
 
 vim.cmd([[set complete+=k]])

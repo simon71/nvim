@@ -30,15 +30,17 @@ return require('packer').startup(function()
   	--Editing
 	use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'} 
 	use {'akinsho/toggleterm.nvim', branch = 'main'}
+	use {'muniter/homeassistant.nvim', requires = {"nvim-lua/plenary.nvim"}}
 	use 'Vonr/align.nvim'
 
 	--General
 	use 'lewis6991/gitsigns.nvim'
-	use 'numToStr/Comment.nvim'
+	use 'terrortylor/nvim-comment'
 	use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 	use 'voldikss/vim-floaterm'
 	use 'sudormrfbin/cheatsheet.nvim'
+	use 'mhinz/vim-startify'
 
 	-- fun 
 	use 'seandewar/killersheep.nvim'
