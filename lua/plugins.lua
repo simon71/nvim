@@ -25,7 +25,8 @@ return require('packer').startup(function()
 	use { "nvim-telescope/telescope-live-grep-args.nvim" }
 
 	-- Whichkey
-  	use 'max397574/which-key.nvim'
+	use 'folke/which-key.nvim'
+	use 'echasnovski/mini.nvim'
 
   	--Editing
 	use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'} 
@@ -37,7 +38,7 @@ return require('packer').startup(function()
 	use 'lewis6991/gitsigns.nvim'
 	use 'terrortylor/nvim-comment'
 	use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
-	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+	use {'akinsho/bufferline.nvim', tag = "v4.*", requires = 'kyazdani42/nvim-web-devicons'}
 	use 'voldikss/vim-floaterm'
 	use 'sudormrfbin/cheatsheet.nvim'
 	use 'mhinz/vim-startify'
